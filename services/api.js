@@ -36,4 +36,4 @@ const userSchema = new schema.Entity('users', {
     idAttribute: 'id'
 });
 
-export const fetchUser = ({page, per_page}) => callApi(`https:/reqres.in/api/users?page=${page}&per_page=${per_page}`, [userSchema], 'GET');
+export const fetchUser = ({page, per_page}) => callApi(`https://reqres.in/api/users?page=${page}&per_page=${per_page}`, [userSchema], 'GET');
